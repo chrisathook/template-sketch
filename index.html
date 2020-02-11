@@ -8,8 +8,7 @@
     <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.1.0_min.js"></script>
     <script src=./js/gsap/CustomEase.js></script>
     <script src=./js/gsap/DrawSVGPlugin.js></script>
-    <script type="application/javascript" src="./js/AdKit.js"></script>
-    <script type="application/javascript" src="./js/Animation.js"></script>
+
     <script type="text/javascript">var clickTag = "https://www.google.com";</script>
     <link rel="stylesheet" href="css/style.css">
     <!--PUT ALL OTHER STYLESHEETS BELOW THIS COMMENT -->
@@ -26,5 +25,19 @@
     </div>
 </a>
 </body>
+<script type="application/javascript" >
+    // manifest export from adhub for local dev and testing.
+    // data needs to be parse and injected into template markers and all binary assets need to be preloaded
+    var devDynamicManifest = {
+        data_1:"Some string",
+        data_2:false,
+        data_3:3434,
+        img_1:"https://www.cdn.com/image.png",
+        img_2:"https://www.cdn.com/icon.svg",
+    }
+
+</script>
+<script type="application/javascript" src="./js/AdKit.js"></script>
+<script type="application/javascript" src="./js/Animation.js"></script>
 <script type="application/javascript" src="./js/App.js"></script>
 </html>
