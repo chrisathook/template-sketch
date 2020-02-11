@@ -1,8 +1,10 @@
 (function (windowRef) {
     windowRef.BannerAnimation =
     function () {
+
+        console.log ("run animation");
         let tl = window.gsap.timeline();
-        tl.to(".box", {duration: 2, x: 100, opacity: 0.5});
+        tl.to("#adRoot", {duration: .2,opacity: 0.5});
         return tl
     }
 }(window));
