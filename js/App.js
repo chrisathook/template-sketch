@@ -1,6 +1,7 @@
 (function (windowRef,kit, bannerAnimation) {
-
-
+    /**
+     * add kit reports it is ready
+     */
     let readyHandler = function () {
         if (kit.isLoaded) {
             loadedHandler()
@@ -8,6 +9,9 @@
             kit.addEventListener('ready', loadedHandler)
         }
     };
+    /**
+     * at this point all preloading from AdKit should be done
+     */
     let loadedHandler = function () {
         bannerAnimation()
     };
